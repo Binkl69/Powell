@@ -18,13 +18,53 @@ h2 {
     color: rgb(142, 113, 211);
 }
 
-div {
-    background-color: pink;
-    width: 400px;
-}
-
-span {
+.highlight {
     color: rgb(245, 236, 115);
     font-size: larger;
     font-weight: bold;
+}
+
+.accent-color {
+    color: red;
+}
+
+#top-section {
+    background-color: pink;
+    
+}
+
+#mid-section {
+    background-color: greenyellow;
+    
+}
+
+.bottom-section {
+    
+}
+
+.intro {
+    font-size: 40px;
+    font-family: Arial;
+}
+
+/* Css comment, it is different than the html one that has the < and the -- and the ! */
+
+/* CSS box model */
+
+/* contanins:
+    margin: empty space around element 
+    Border: a border around element 
+    Padding: empty space with background around element
+
+    All of these ADD on top of the width and height!
+ */
+
+.box {
+    background:pink;
+    width: 300px;
+
+    margin:150px;
+    border: 15px solid green;
+    padding: 50px 100px 300px 25px; /* top right bottom left */
+
 }
