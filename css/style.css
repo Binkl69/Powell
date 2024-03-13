@@ -2,6 +2,9 @@ body {
     background-color: #0cf;
     color:rgb(255, 255, 255);
     font-size: 24px;
+    background-image: url(../images/bananas.png);
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    
 }
 
 p {
@@ -11,11 +14,13 @@ p {
 h1 {
     font-size: 70px;
     color: #3747b3;
+    margin-bottom: 0px;
 }
 
 h2 {
     font-size: 50px;
     color: rgb(142, 113, 211);
+    margin-bottom: 0px;
 }
 
 .highlight {
@@ -39,6 +44,7 @@ h2 {
 }
 
 .bottom-section {
+    background-color: greenyellow;
     
 }
 
@@ -60,11 +66,10 @@ h2 {
  */
 
 .box {
-    background:pink;
-    width: 300px;
-
-    margin:150px;
-    border: 15px solid green;
-    padding: 50px 100px 300px 25px; /* top right bottom left */
-
+    background-image: url(../images/cat.jpg);
+    margin:100px;
+    padding: 300px;
+    background-size: cover;
+    background-position: center
+    ;
 }
