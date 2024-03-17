@@ -9,6 +9,9 @@ body {
 
 p {
     color: #2f4c5c;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 1;
 }
 
 h1 {
@@ -18,9 +21,9 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 35px;
     color: rgb(142, 113, 211);
-    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .highlight {
@@ -73,3 +76,65 @@ h2 {
     background-position: center
     ;
 }
+
+.bolder {
+    text-decoration:wavy;
+
+}
+
+/* Styling links
+psuedo classes
+
+*/
+
+a:link {
+    color:rgb(67, 158, 7);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(8, 113, 235);
+}
+
+a:hover {
+    color:rgb(231, 111, 167);
+}
+
+a:active {
+    color:#3747b3;
+    font-size: 30px;
+}
+
+/* FYI this is the right order of creating a cascading links
+style. If it is not in this order, things will get messed up
+
+So
+
+a:link - first
+a:visited - second
+a:hover - third 
+a:active - fourth
+
+ The reason why this happens is because the attribute that
+ comes first gets written first and the attribute that comes
+ after overwrites it, so if we put visited after hover the 
+ visited will override the hover because it came after it,
+ so we won't see the hover. same story if we put active first.
+ since with active we want the link to change color as it is beiong
+ clicked. if we put it first it will work but because then hover or 
+ visited come after it it will be overwritten. so visited as an 
+ attribute that doesn't reqire an active action, you can see it so
+ it makes sense to put it first. hover require us to hover over a link
+ to work so thats why it comes second, finally, active requires us to
+ hold or click a link to change so if it is first we won't see that effect
+ we will see the overwritten effect of visited, or hover in some cases.
+ SO it seems a good rule of thumb is to put the least active-action requiring
+ attribute first and then go with that in terms of what action the user needs
+to do, is it just hovering? then put hover second, is it more involved and clicky?
+then put it last. 
+
+if you want to include accessibility features you can add
+
+a:focus which allows people to walk through links with the TAB keyboard button
+
+*/
